@@ -1,0 +1,139 @@
+DISPLAY METHODS:
+----------------
+
+1. VIEW DATABASE : 
+
+	show tables;
+
+2. View Table and COlmns:
+	
+	 show tableName;
+
+3. Full table with details:
+
+	select * from tablename; -- SHOW ALL COLUMNS OF ROWS
+
+	select emp_id,emp_name from employee;
+
+
+------------------------------------------------
+DATABASE CREATION REALTED OPERATIONS:
+------------------------------------------------
+
+I.  CREATE DATABASE:
+
+	create database studentDemo;
+
+II. DELETE DATABASE:
+	
+	drop database studentDemo;
+
+	(or)
+
+	drop schema studentDemo;
+
+ 	-- If no database exists, how to delete without Error:
+
+ 	drop database if exists studentDemo;
+
+III. SELECT DATABASE:
+
+	use studentDemo;
+
+IV. VIEW DATABASE - Tables:
+
+	show Tables;  -- After Select(use studentDemo) database 
+
+--====================================================================
+
+
+TABLE REALTED OPERATIONS:
+--------------------------
+1. Create Table:
+
+2. alter Tables;
+	a. column add
+	b. column delete
+	c. add two column of values
+
+3. insert value;
+	
+	a. insert value into table:(Single value Insert)
+	b. Multi value Insert:
+	c. Insert only 2 columns only:
+
+
+
+4. delete Tables;
+5. VIEW detail;
+6. display particult value;
+
+
+
+
+
+--------------------------------------------------------------------------------------------------
+1. CREATE TABLE:
+	
+	create table employee(Emp_id int primary key,
+							emp_name varchar(30),
+							role varchar(20),
+		);
+
+2. ALTER TABLE:
+
+	a. ADD column:
+
+		ALTER table employee ADD salary int;
+
+	b. DELETE COLUMN:
+
+		ALTER table employee drop role;
+
+	c. Add MoreThan One Column:
+
+		ALTER table employee ADD bouns1 int, ADD bouns2 int; -- add more than one column
+
+3. INSERT VALUE:
+		
+		a. insert value into table:(Single value Insert)
+
+			INSERT into employee value(1,"kathija","Team leader",230000);
+
+		b. Multi value Insert:
+
+			insert into employee value
+							(2,"harsha","doctor",76000),
+                            (3,"priety","Team leader",18000),
+                            (4,"karthi","ceo",92000000),
+                            (5,"saranya","Team leader",77000),
+                            (6,"mani","sales",28000),
+                            (7,"rafi","Team leader",85000),
+                            (8,"naveen","HR",78000),
+                            (9,"chandran","sales",65000);
+
+
+        c. Insert only 2 columns only:
+
+        	insert into employee(emp_id,emp_name) value(10,"arun");
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	
+
+
+
+
